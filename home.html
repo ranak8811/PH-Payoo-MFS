@@ -21,7 +21,7 @@
             <!-- available balance starts here -->
             <div class="stats shadow">
               <div class="stat">
-                <div class="stat-value">9400</div>
+                <div id="account-balance" class="stat-value">9400</div>
                 <div class="stat-desc">Available balance</div>
               </div>
             </div>
@@ -44,6 +44,7 @@
                     <span class="label-text">Amount</span>
                   </label>
                   <input
+                    id="add-money-input"
                     type="email"
                     placeholder="Amount"
                     class="input input-bordered"
@@ -55,15 +56,18 @@
                     <span class="label-text">Pin</span>
                   </label>
                   <input
+                    id="pin-number-input"
                     type="password"
-                    placeholder="password"
+                    placeholder="Pin number"
                     class="input input-bordered"
                     autocomplete="off"
                     required
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add money</button>
+                  <button id="add-money-btn" class="btn btn-primary">
+                    Add money
+                  </button>
                 </div>
               </form>
             </div>
